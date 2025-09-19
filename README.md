@@ -1,1 +1,1 @@
-Algoritmo para calcular e gerar linhas do Triângulo de Pascal, até um valor de ordem n
+Python algorithm to generate lines of the Pascal's Triangle
