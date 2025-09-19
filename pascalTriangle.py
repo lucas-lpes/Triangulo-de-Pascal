@@ -1,19 +1,19 @@
-#Representação dos coeficientes das expansões binomiais de ordem 0 até o infinito
+#Representation of the coefficients of binomial expansions from order 0 to infinity
 
-def pascal(ordem, cont = 0, lista = [1]):
-    #cont será uma variavel para parar a função quando chegar no valor da ordem
-    print(lista)
+def pascal(target, acc = 0, list = [1]):
+    #acc its the variable to control when it gets to the target
+    print(list)
 
-    if cont == ordem:
+    if acc == target:
         return
 
 
-    listaAux = [1]
-    for i in range(len(lista)-1):
-        prox = lista[i] + lista[i+1]
-        listaAux.append(prox)
+    temp = [1]
+    for i in range(len(list)-1):
+        next = list[i] + list[i+1]
+        temp.append(next)
 
-    listaAux.append(1)
+    temp.append(1)
     
-    #Chamada recursiva para preencher a proxima linha
-    pascal(ordem, cont+1, listaAux)
+    #Recursive call to fullfil the next line
+    pascal(target, acc+1, temp)
